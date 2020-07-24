@@ -1,4 +1,4 @@
-package com.resources;
+package com.utils;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -19,7 +19,7 @@ public class ExcelData {
 		{
 			
 			ArrayList<String> al = new	ArrayList<String>();
-			FileInputStream fis = new FileInputStream("C:\\Users\\pkodanda\\Desktop\\TestData.xlsx");
+			FileInputStream fis = new FileInputStream(".\\src\\main\\java\\com\\resources\\TestData.xlsx");
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
 			int sheets = workbook.getNumberOfSheets();
 			for(int i=0;i<sheets;i++)

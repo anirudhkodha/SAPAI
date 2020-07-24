@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-23T22:17:13 IST" name="Suite" finished-at="2020-07-23T22:18:09 IST" duration-ms="56882">
+  <suite started-at="2020-07-24T09:10:22 IST" name="Default suite" finished-at="2020-07-24T09:10:42 IST" duration-ms="20504">
     <groups>
     </groups>
-    <test started-at="2020-07-23T22:17:13 IST" name="Test Negative" finished-at="2020-07-23T22:17:44 IST" duration-ms="31882">
+    <test started-at="2020-07-24T09:10:22 IST" name="Default test" finished-at="2020-07-24T09:10:42 IST" duration-ms="20504">
       <class name="com.MyTests.SignUpFlowNegativeTest">
-        <test-method is-config="true" signature="intitalize()[pri:0, instance:com.MyTests.SignUpFlowNegativeTest@5dcd8c7a]" started-at="2020-07-23T22:17:13 IST" name="intitalize" finished-at="2020-07-23T22:17:36 IST" duration-ms="23787" status="PASS">
+        <test-method is-config="true" signature="intitalize()[pri:0, instance:com.MyTests.SignUpFlowNegativeTest@4eaf3684]" started-at="2020-07-24T09:10:22 IST" name="intitalize" finished-at="2020-07-24T09:10:33 IST" duration-ms="11406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intitalize -->
-        <test-method signature="signUpNegative()[pri:0, instance:com.MyTests.SignUpFlowNegativeTest@5dcd8c7a]" started-at="2020-07-23T22:17:36 IST" name="signUpNegative" finished-at="2020-07-23T22:17:43 IST" duration-ms="6739" status="FAIL">
+        <test-method signature="signUpNegative()[pri:0, instance:com.MyTests.SignUpFlowNegativeTest@4eaf3684]" started-at="2020-07-24T09:10:33 IST" name="signUpNegative" finished-at="2020-07-24T09:10:41 IST" duration-ms="8044" status="FAIL">
           <exception class="junit.framework.ComparisonFailure">
             <message>
               <![CDATA[expected:<...es> but was:<...>]]>
@@ -55,27 +55,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signUpNegative -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.SignUpFlowNegativeTest@5dcd8c7a]" started-at="2020-07-23T22:17:44 IST" name="tearDown" finished-at="2020-07-23T22:17:44 IST" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.SignUpFlowNegativeTest@4eaf3684]" started-at="2020-07-24T09:10:41 IST" name="tearDown" finished-at="2020-07-24T09:10:42 IST" duration-ms="984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.MyTests.SignUpFlowNegativeTest -->
-    </test> <!-- Test Negative -->
-    <test started-at="2020-07-23T22:17:45 IST" name="Test positive" finished-at="2020-07-23T22:18:09 IST" duration-ms="24548">
-      <class name="com.MyTests.SignUpFlowPositiveTest">
-        <test-method is-config="true" signature="intitalize()[pri:0, instance:com.MyTests.SignUpFlowPositiveTest@16c63f5]" started-at="2020-07-23T22:17:45 IST" name="intitalize" finished-at="2020-07-23T22:18:02 IST" duration-ms="17116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intitalize -->
-        <test-method signature="signUpPositive()[pri:0, instance:com.MyTests.SignUpFlowPositiveTest@16c63f5]" started-at="2020-07-23T22:18:02 IST" name="signUpPositive" finished-at="2020-07-23T22:18:09 IST" duration-ms="7084" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpPositive -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.MyTests.SignUpFlowPositiveTest@16c63f5]" started-at="2020-07-23T22:18:09 IST" name="tearDown" finished-at="2020-07-23T22:18:09 IST" duration-ms="343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.MyTests.SignUpFlowPositiveTest -->
-    </test> <!-- Test positive -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

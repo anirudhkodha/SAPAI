@@ -19,7 +19,7 @@ import com.resources.BaseTest;
 
 import junit.framework.Assert;
 import org.apache.logging.log4j.Logger;
-import com.resources.ExcelData;
+import com.utils.ExcelData;
 
 
 public class SignUpFlowNegativeTest extends BaseTest {

@@ -1,6 +1,7 @@
 package com.MyTests;
 
 
+
 import java.io.IOException;
 //import java.util.logging.Logger;
 import java.util.ArrayList;
@@ -16,7 +17,7 @@ import org.testng.annotations.Test;
 import com.myPages.LandingPage;
 import com.myPages.RegisterPage;
 import com.resources.BaseTest;
-import com.resources.ExcelData;
+import com.utils.ExcelData;
 
 import junit.framework.Assert;
 import org.apache.logging.log4j.Logger;

@@ -7,17 +7,17 @@ import org.openqa.selenium.WebElement;
 public class RegisterPage {
 	
 	public WebDriver driver;
-	By frame = By.id("IDS_UI_Window");
-	By txtFirstname = By.cssSelector("[name='firstName']");
-	By txtLastname = By.cssSelector("[name='lastName']");
-	By txtEmail = By.cssSelector("[id='mail']");
-	By txtPassword = By.cssSelector("[id='newPasswordInput']");
-	By txtRepassword = By.cssSelector("[id='retypeNewPasswordInput']");
-	By chkPrivstatement = By.cssSelector("[id='pdAccept']");
-	By chkTermscondition = By.cssSelector("[id='touAccept']");
-	By btnRegister = By.cssSelector("[id='sapStoreRegisterFormSubmit']");
-	By msgSuccess = By.xpath("//div[@class='ids-container']/h1");
-	By msgError = By.cssSelector("[id='touAccept.errors']");
+	private By frame = By.id("IDS_UI_Window");
+	private By txtFirstname = By.cssSelector("[name='firstName']");
+	private By txtLastname = By.cssSelector("[name='lastName']");
+	private By txtEmail = By.cssSelector("[id='mail']");
+	private By txtPassword = By.cssSelector("[id='newPasswordInput']");
+	private By txtRepassword = By.cssSelector("[id='retypeNewPasswordInput']");
+	private By chkPrivstatement = By.cssSelector("[id='pdAccept']");
+	private By chkTermscondition = By.cssSelector("[id='touAccept']");
+	private By btnRegister = By.cssSelector("[id='sapStoreRegisterFormSubmit']");
+	private By msgSuccess = By.xpath("//div[@class='ids-container']/h1");
+	private By msgError = By.cssSelector("[id='touAccept.errors']");
 	
 public RegisterPage(WebDriver driver) {
 		

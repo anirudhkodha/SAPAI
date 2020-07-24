@@ -7,10 +7,8 @@ import org.openqa.selenium.WebElement;
 public class LandingPage {
 
 	public WebDriver driver;
-	By btnSignUp = By.cssSelector("div[class*='signup link']");
-	//= By.xpath("['div.btn--content']");
-	//By okBtn = By.cssSelector("div[class*='cookieBanner div']");
-	By okBtn = By.xpath("//div[@class='ml3 sc-bZQynM cCLMsV sc-EHOje dXZRce']/div");
+	private By btnSignUp = By.cssSelector("div[class*='signup link']");
+	private By btnOk = By.xpath("//div[@class='ml3 sc-bZQynM cCLMsV sc-EHOje dXZRce']/div");
 	
 	public LandingPage(WebDriver driver) {
 		
@@ -28,7 +26,7 @@ public class LandingPage {
 	
 	public WebElement getOkBtn()
 	{
-		return driver.findElement(okBtn);
+		return driver.findElement(btnOk);
 		
 	}
 	

@@ -11,11 +11,11 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.resources.BaseTest;
+import com.resources.TestBase;
 import com.resources.ExtentReporter;
 
 
-public class Listeners extends BaseTest implements ITestListener{
+public class Listeners extends TestBase implements ITestListener{
 	ExtentReports extent = ExtentReporter.getReportObject();
 	ExtentTest test;
 	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();

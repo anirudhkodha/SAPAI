@@ -15,15 +15,15 @@ import org.testng.annotations.Test;
 
 import com.myPages.LandingPage;
 import com.myPages.RegisterPage;
-import com.resources.BaseTest;
+import com.resources.TestBase;
 
 import junit.framework.Assert;
 import org.apache.logging.log4j.Logger;
 import com.utils.ExcelData;
 
 
-public class SignUpFlowNegativeTest extends BaseTest {
-	public static Logger log = LogManager.getLogger(BaseTest.class.getName());
+public class SignUpFlowNegativeTest extends TestBase {
+	public static Logger log = LogManager.getLogger(TestBase.class.getName());
 	public WebDriver driver;
 	
 @BeforeTest

@@ -1,6 +1,7 @@
 package com.MyTests;
 
 
+
 import java.io.IOException;
 //import java.util.logging.Logger;
 import java.util.ArrayList;
@@ -9,6 +10,8 @@ import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -42,12 +45,14 @@ public class SignUpFlowNegativeTest extends TestBase {
 		 //com.resources.ExcelData ed = new com.resources.ExcelData();
 		 ArrayList<String> data = ed.getExcelData("signup");
 		 LandingPage lp = new LandingPage(driver);
+		 RegisterPage rp = new RegisterPage(driver);	
 		 driver.manage().window().maximize();
 		 log.info("Naviagted to homepage");
 		 lp.getOkBtn().click();
 		 lp.getSignUp().click();
-		 RegisterPage rp = new RegisterPage(driver);		 
-		 driver.switchTo().frame(rp.getFrame());
+		 WebDriverWait wait = new WebDriverWait(driver,20);
+		 wait.until((ExpectedConditions.frameToBeAvailableAndSwitchToIt(rp.getFrame())));
+		 //driver.switchTo().frame(rp.getFrame());
 		 rp.getFName().sendKeys(data.get(1));
 		 rp.getLName().sendKeys(data.get(2));
 		 rp.geteMail().sendKeys(data.get(3));

@@ -7,9 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import org.apache.logging.log4j.LogManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -20,17 +18,17 @@ import com.resources.TestBase;
 import com.utils.ExcelData;
 
 import junit.framework.Assert;
-import org.apache.logging.log4j.Logger;
 
 
 public class SignUpFlowPositiveTest extends TestBase {
 	public static Logger log = LogManager.getLogger(TestBase.class.getName());
-	public WebDriver driver;
 	
+	public String browser;
 @BeforeTest
 	public void intitalize() throws IOException
 	{
-	driver = initializeDriver();
+	
+	//driver = initializeDriver( );
 	driver.get(prop.getProperty("url"));
 	//driver.manage().window().maximize();
 		
